@@ -11,7 +11,9 @@ Repositorio asignatura Electiva Profesional III
 * Publicar en GitHub: https://youtu.be/D6VFF8Rsyao
 
 ### Autor
-Jorge Rubaino [@ostjh]
+Jorge Rubaino
+
+[@ostjh]
 License
 ----
 MIT
