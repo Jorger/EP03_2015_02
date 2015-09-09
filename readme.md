@@ -9,6 +9,8 @@ Repositorio asignatura Electiva Profesional III
 * Cloud9: https://c9.io/
 * Uso Cliente GitHub (Windows): https://www.youtube.com/watch?v=MuNnhLATJUU
 * Publicar en GitHub: https://youtu.be/D6VFF8Rsyao
+* Desplegar aplicaciones en GitHub: http://drastudio.github.io/url-generator/
+* Desplegar aplicaciones en GDrive: https://support.google.com/drive/answer/2881970?hl=es (Leer Aviso)
 
 ### Autor
 Jorge Rubaino
