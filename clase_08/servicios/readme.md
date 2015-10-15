@@ -1,22 +1,28 @@
-# Repositorio Electiva Profesional III
+# Consumir Servicios desde el Front
 
-Repositorio asignatura Electiva Profesional III
+Script que ayudará a consumir los servicios REST.
 
-### Enlaces.
+## Función consumeServicios
 
-* Slack: https://unicundi.slack.com/
-* DropBox: https://goo.gl/murtJG
-* Cloud9: https://c9.io/
-* Uso Cliente GitHub (Windows): https://www.youtube.com/watch?v=MuNnhLATJUU
-* Publicar en GitHub: https://youtu.be/D6VFF8Rsyao
-* Desplegar aplicaciones en GitHub: http://drastudio.github.io/url-generator/
-* Desplegar aplicaciones en GDrive: https://support.google.com/drive/answer/2881970?hl=es (Leer Aviso)
+Función que recibe tres parámetros;
 
-### Transmisiones.
+1. El tipo de acción a realizar, tomados del array de [nomServicios]
+2. Las valores a enviar.
+3. CallBack que se ejecutará una vez la función ha terminado.
 
-#### 10 de Septiembre de 2015
+```javascript
+consumeServicios(tipo, valores, function(){
+    //Datos recibe del servicio...
+});
+```
 
-https://youtu.be/BIZtNKMbNYM
+## Ejemplo Traer listado de tareas
+
+```javascript
+consumeServicios(1, "", function(data){
+    console.log(data);
+});
+```
 
 ### Autor
 Jorge Rubaino
@@ -26,3 +32,4 @@ License
 ----
 MIT
 [@ostjh]:https://twitter.com/ostjh
+[nomServicios]:https://github.com/Jorger/EP03_2015_02/blob/master/clase_08/servicios/services.js#L2
