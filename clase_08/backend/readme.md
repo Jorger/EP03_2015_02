@@ -1,22 +1,66 @@
-# Repositorio Electiva Profesional III
+# Servicios REST/Express
 
-Repositorio asignatura Electiva Profesional III
+Servicio Rest To-Do List haciendo uso de Arrays para almacenamiento de Tareas.
 
-### Enlaces.
+### Instalación dependencias.
 
-* Slack: https://unicundi.slack.com/
-* DropBox: https://goo.gl/murtJG
-* Cloud9: https://c9.io/
-* Uso Cliente GitHub (Windows): https://www.youtube.com/watch?v=MuNnhLATJUU
-* Publicar en GitHub: https://youtu.be/D6VFF8Rsyao
-* Desplegar aplicaciones en GitHub: http://drastudio.github.io/url-generator/
-* Desplegar aplicaciones en GDrive: https://support.google.com/drive/answer/2881970?hl=es (Leer Aviso)
+```
+npm install
+```
 
-### Transmisiones.
+### Servicios
 
-#### 10 de Septiembre de 2015
+* Mostrar todas las tareas.
+* Crear una nueva tarea.
+* Editar/cambiar estado de una tarea.
+* Mostrar sólo una tarea.
+* Eliminar una tarea.
 
-https://youtu.be/BIZtNKMbNYM
+#### Mostrar todas las tareas.
+
+Método **GET**
+
+http://localhost:8081/getAllTask
+
+#### Crear una nueva tarea.
+
+Método **POST**
+
+http://localhost:8081/createTask
+
+```json
+{
+	"task"	    :	"Nueva Tarea",
+	"finish"	: 	true
+}
+```
+
+#### Editar/cambiar estado de una tarea.
+
+Método **PUT**
+
+http://localhost:8081/updateTask
+
+```json
+{
+	"id"        :   1,
+	"finish"	: 	false, 
+	"field"     :   "finish"
+}
+```
+
+#### Mostrar sólo una tarea.
+
+Método **GET**
+
+http://localhost:8081/getTask/**idTask**
+
+#### Eliminar una tarea.
+
+Método **DELETE**
+
+http://localhost:8081/deleteTask/**idTask**
+
 
 ### Autor
 Jorge Rubaino
