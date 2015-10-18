@@ -8,6 +8,11 @@ Servicio Rest To-Do List haciendo uso de Arrays para almacenamiento de Tareas.
 npm install
 ```
 
+### Organización de archivos.
+
+![Adivinando](https://dl.dropboxusercontent.com/u/181689/archivosNode.png)
+
+
 ### Servicios
 
 * Mostrar todas las tareas.
