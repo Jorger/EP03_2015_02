@@ -1,31 +1,55 @@
 var express = 	require("express"),
-	app		= 	express()
+	app		= 	express(),
+	cons 	=	require("consolidate"),
 	puerto 	= 	process.env.PORT || 8081,
 	bodyParser 	= require('body-parser');
+
+//consolidate integra swig con express...
+app.engine("html", cons.swig); //Template engine...
+app.set("view engine", "html");
+app.set("views", __dirname + "/vistas");
+app.use(express.static('public'));
 
 //Para indicar que se envía y recibe información por medio de Json...
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+//Crear un token único relacionado al ID de la tarea...
+var guid = function()
+{
+	function s4()
+	{
+		return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+	}
+	return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
+
 var listaTareas = [
 					{
-						id 		: 	1,
+						id 		: 	guid(),
 						task	:	"Salir a correr",
 						date	: 	"15/06/2015",
 						finish	: 	true
 					},
 					{
-						id 		: 	2,
+						id 		: 	guid(),
 						task	:	"Entregar trabajo EP03",
 						date	: 	"22/10/2015",
 						finish	: 	false
 					},
 					{
-						id 		: 	3,
+						id 		: 	guid(),
 						task	:	"Finalización del segundo corte",
 						date	: 	"30/10/2015",
 						finish	: 	false
 					}];
+
+app.get("/", function(req, res)
+{
+	res.render("index", {
+		titulo 	:  	"To-Do"
+	});
+});
 
 //Servicios REST...
 app.get('/getAllTask', function(req, res)
@@ -77,8 +101,9 @@ var crearEditarTarea = function(data, tipo)
 	{
 		listaTareas.push(data);
 		indice = listaTareas.length - 1;
-		listaTareas[indice].id = listaTareas.length;
+		listaTareas[indice].id = guid();
 		listaTareas[indice].date = fechaActual;
+
 	}
 	else
 	{
