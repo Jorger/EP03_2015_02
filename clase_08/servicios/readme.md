@@ -45,7 +45,7 @@ var updateData = {
                     "field"     : "finish"
                 };
 consumeServicios(3, updateData, function(data){
-    console.log("Actualizada, actualizar to-do")
+    console.log("Actualizada, actualizar to-do");
 });
 ```
 
@@ -53,7 +53,7 @@ consumeServicios(3, updateData, function(data){
 
 ```javascript
 consumeServicios(4, "123456", function(data){
-    console.log("Eliminada, actualizar to-do")
+    console.log("Eliminada, actualizar to-do");
 });
 ```
 
