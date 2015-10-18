@@ -1,6 +1,6 @@
 # Consumir Servicios desde el Front
 
-Script que ayudará a consumir los servicios REST.
+Script que ayudará a consumir los [servicios REST].
 
 ## Función consumeServicios
 
@@ -33,3 +33,4 @@ License
 MIT
 [@ostjh]:https://twitter.com/ostjh
 [nomServicios]:https://github.com/Jorger/EP03_2015_02/blob/master/clase_08/servicios/services.js#L2
+[servicios REST]:https://github.com/Jorger/EP03_2015_02/tree/master/clase_08/backend
