@@ -16,13 +16,47 @@ consumeServicios(tipo, valores, function(){
 });
 ```
 
-## Ejemplo Traer listado de tareas
+## Ejemplos 
+
+### Traer listado de tareas
 
 ```javascript
+var todos = [];
 consumeServicios(1, "", function(data){
-    console.log(data);
+    todos = data;
 });
 ```
+
+### Crear una nueva tarea.
+
+```javascript
+var newToDo = {finish : false, task : "Nueva tarea"};
+consumeServicios(2, newToDo, function(data){
+    todos.push(data);
+});
+```
+
+### Editar/cambiar de estado una tarea.
+
+```javascript
+var updateData = {
+                    "id"        : "123456",
+                    "finish"    : true,
+                    "field"     : "finish"
+                };
+consumeServicios(3, updateData, function(data){
+    console.log("Actualizada, actualizar to-do")
+});
+```
+
+### Eliminar una tarea.
+
+```javascript
+consumeServicios(4, "123456", function(data){
+    console.log("Eliminada, actualizar to-do")
+});
+```
+
 
 ### Autor
 Jorge Rubaino
