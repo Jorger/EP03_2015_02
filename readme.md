@@ -12,11 +12,15 @@ Repositorio asignatura Electiva Profesional III
 * Desplegar aplicaciones en GitHub: http://drastudio.github.io/url-generator/
 * Desplegar aplicaciones en GDrive: https://support.google.com/drive/answer/2881970?hl=es (Leer Aviso)
 
-### Transmisiones.
+### Clases es vídeo.
 
 #### 10 de Septiembre de 2015
 
 https://youtu.be/BIZtNKMbNYM
+
+#### 22 de Octubre de 2015
+
+https://youtu.be/mAbZs1iaC2M
 
 ### Autor
 Jorge Rubaino
