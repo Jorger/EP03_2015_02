@@ -12,7 +12,7 @@ Repositorio asignatura Electiva Profesional III
 * Desplegar aplicaciones en GitHub: http://drastudio.github.io/url-generator/
 * Desplegar aplicaciones en GDrive: https://support.google.com/drive/answer/2881970?hl=es (Leer Aviso)
 
-### Clases es vídeo.
+### Clases en vídeo.
 
 #### 10 de Septiembre de 2015
 
