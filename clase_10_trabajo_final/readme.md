@@ -66,6 +66,10 @@ var devuelve = {respuestaCorrecta : variableNumeroPreguntaCorrecta, correcto : f
 
 La actividad puede ser vista en funcionamiento en la siguiente dirección: https://trivia-jorger-1.c9.io
 
+## Explicación de la actividad en vídeo:
+
+https://youtu.be/vLfxwf6WcDU?t=17m13s
+
 ### Autor
 Jorge Rubaino
 
